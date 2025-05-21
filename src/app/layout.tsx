@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Lora, Source_Sans_3, Comic_Neue } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const lora = Lora({
   subsets: ["latin"],
+  variable: "--font-lora",
+  weight: ["400", "700"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sourceSans3 = Source_Sans_3({
   subsets: ["latin"],
+  variable: "--font-source-sans-3",
+  weight: ["400", "700", "900"],
+});
+const comicNeue = Comic_Neue({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-comic-neue',
 });
 
 export const metadata: Metadata = {
@@ -24,9 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${comicNeue.variable} ${inter.variable} ${lora.variable} ${sourceSans3.variable} font-sans`}>
         {children}
       </body>
     </html>
