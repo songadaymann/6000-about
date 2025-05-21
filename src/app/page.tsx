@@ -161,7 +161,14 @@ export default function ArticlePage() {
               THE TICKER IS <span className="text-green-600">$TAXES</span>
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 mb-6">
-              They say only two things in life are inevitable, so I am turning my Crypto Tax Nightmare into a meme coin.
+              They say only two things in life are{' '}
+              <span className="relative group inline-block">
+                <span className="text-blue-600 cursor-pointer">inevitable</span>
+                <span className="absolute left-1/2 -translate-x-1/2 mt-2 z-20 hidden group-hover:block" style={{ minWidth: '600px' }}>
+                  <img src="/death-taxes.jpg" alt="Death and Taxes" style={{ width: '600px', height: 'auto' }} className="rounded shadow-lg border border-gray-200" />
+                </span>
+              </span>
+              , so I am turning my Crypto Tax Nightmare into a meme coin.
             </p>
             <p className="text-lg sm:text-xl text-gray-600 mb-6">
               <b>
@@ -176,6 +183,8 @@ export default function ArticlePage() {
             </p>
             <p className="text-lg sm:text-xl text-gray-600 mb-6">
               To participate, just send eth (mainnet, base, arb, op ONLY) to:
+              <br />
+              <span className="font-mono bg-gray-100 p-1 rounded">[address goes here]</span>
             </p>
             <p className="text-lg sm:text-xl text-gray-600 mb-6">
               The presale is open for one week from <b>Monday June 2nd 2025 - Monday June 9th 2025</b>. My 6000th song happens on June 6th!
