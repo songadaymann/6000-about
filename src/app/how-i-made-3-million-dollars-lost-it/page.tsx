@@ -1,6 +1,7 @@
 'use client';
 import Script from 'next/script';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ArticlePage() {
   const [openStory, setOpenStory] = useState(false);
@@ -66,10 +67,10 @@ export default function ArticlePage() {
               WE TOOK OUT AN AAVE LOAN
             </p>
             <div className="grid grid-cols-2 gap-4 max-w-md mx-auto my-6">
-              <img src="/50.png" alt="50" className="max-w-[180px] w-full h-auto rounded shadow mx-auto" />
-              <img src="/69.png" alt="69" className="max-w-[180px] w-full h-auto rounded shadow mx-auto" />
-              <img src="/99.png" alt="99" className="max-w-[180px] w-full h-auto rounded shadow mx-auto" />
-              <img src="/300.png" alt="300" className="max-w-[180px] w-full h-auto rounded shadow mx-auto" />
+              <Image src="/50.png" alt="50" width={180} height={180} className="max-w-[180px] w-full h-auto rounded shadow mx-auto" />
+              <Image src="/69.png" alt="69" width={180} height={180} className="max-w-[180px] w-full h-auto rounded shadow mx-auto" />
+              <Image src="/99.png" alt="99" width={180} height={180} className="max-w-[180px] w-full h-auto rounded shadow mx-auto" />
+              <Image src="/300.png" alt="300" width={180} height={180} className="max-w-[180px] w-full h-auto rounded shadow mx-auto" />
             </div>
             <p className="text-lg sm:text-xl text-gray-600 mb-6">
               <span className="relative group">
@@ -78,9 +79,9 @@ export default function ArticlePage() {
                 <span className="absolute left-1/2 -translate-x-1/2 mt-2 w-64 p-3 rounded bg-white text-gray-800 text-sm shadow-lg border border-gray-200 z-10 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-200">
                   Over-collateralized just means you put in collateral that is worth more than whatever you&apos;re taking out.
                 </span>
-              </span>, we thought we could weather the storm. We put in 518 ETH, worth roughly 1.5 million at the time, to take out "just" the $400k we owed. A week later, Terra Luna, the "algorithmic stable coin", imploded. The market crashed. Our ETH was worth less by the minute. We were at dire risk of being liquidated. I paid off the loan at the last minute and our 450 ETH had turned into just 163, worth around $200k.
+              </span>, we thought we could weather the storm. We put in 518 ETH, worth roughly 1.5 million at the time, to take out &quot;just&quot; the $400k we owed. A week later, Terra Luna, the &quot;algorithmic stable coin&quot;, imploded. The market crashed. Our ETH was worth less by the minute. We were at dire risk of being liquidated. I paid off the loan at the last minute and our 450 ETH had turned into just 163, worth around $200k.
             </p>
-            <img src="/163.png" alt="163" className="max-w-md w-full h-auto rounded shadow mx-auto my-6" />
+            <Image src="/163.png" alt="163" width={400} height={400} className="max-w-md w-full h-auto rounded shadow mx-auto my-6" />
             <p className="text-lg sm:text-xl text-gray-600 mb-6">
               We filed as many extensions as we could as my accountant and I combed through my crypto taxes line-by-line on a spreadsheet. It was literally a years long process. When all was said and done, we arrived at a number that we owed for 2022:
             </p>
@@ -97,9 +98,11 @@ export default function ArticlePage() {
             <p className="text-2xl sm:text-3xl font-semibold my-6 text-center text-red-600">
               SELLING MY AUTOGLYPH
             </p>
-            <img 
+            <Image 
               src="/glyph215.png" 
               alt="Autoglyph example" 
+              width={600}
+              height={600}
               className="my-8 rounded-lg shadow-lg mx-auto"
             />
             <p className="text-lg sm:text-xl text-gray-600 mb-6">
